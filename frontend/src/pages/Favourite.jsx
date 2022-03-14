@@ -27,6 +27,9 @@ export default function Table() {
     await axios.delete(`/products/${id}`).then((res) => console.log(res.data));
     setProduct(product.filter((elem) => elem._id !== id));
     toast.success("product deleted successfully..");
+    setTimeout(() => {
+      window.location.reload();
+    }, 2000);
   };
 
   const favouriteProduct = async (id) => {
