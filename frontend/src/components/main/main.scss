@@ -1,0 +1,66 @@
+@import "../../styles/variable.scss";
+
+.product_title {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.search_container {
+  margin-bottom: 40px;
+  .search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+    //   border-radius: 30px;
+    input {
+      border-radius: 30px;
+      height: 60px;
+      // text-indent: 25px;
+      border: 2px solid #d6d4d4;
+      &:focus {
+        box-shadow: none;
+        border: 2px solid $color_blue;
+      }
+    }
+    button {
+      border-radius: 30px;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      height: 50px;
+      width: 150px;
+      background: $color_blue;
+      &:hover {
+        background: rgb(45, 45, 238) !important;
+      }
+      .fa-search {
+        position: absolute;
+        top: 17px;
+        left: 10px;
+        padding: 0 15px;
+      }
+    }
+  }
+  .add_button {
+    background: $color_blue !important;
+    width: 150px;
+    height: auto;
+    padding: 16px;
+    &:hover {
+      background: rgb(45, 45, 238) !important;
+    }
+  }
+  .starred_btn {
+    background: white;
+    height: 50px;
+    border: 2px solid $color_blue;
+    margin-left: 15px;
+    &:hover {
+      background: rgb(220, 220, 223) !important;
+      border: 2px solid $color_blue;
+    }
+    &:focus {
+      box-shadow: none;
+      border: 2px solid $color_blue;
+    }
+  }
+}

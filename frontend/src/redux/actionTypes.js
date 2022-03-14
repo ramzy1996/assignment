@@ -1,0 +1,10 @@
+// Load
+export const LOAD_DATA_START = "LOAD_DATA_START";
+export const LOAD_DATA_SUCCESS = "LOAD_DATA_SUCCESS";
+export const LOAD_DATA_ERROR = "LOAD_DATA_ERROR";
+
+// create
+export const CREATE_DATA_START = "CREATE_DATA_START";
+export const CREATE_DATA_SUCCESS = "CREATE_DATA_SUCCESS";
+export const CREATE_DATA_ERROR = "CREATE_DATA_ERROR";
+
